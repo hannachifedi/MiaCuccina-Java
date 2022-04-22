@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/hanna/OneDrive/Bureau/projet/PidevJava/src/entities/Livraison.java</file>
+            <file>file:/C:/Users/hanna/OneDrive/Bureau/projet/PidevJava/src/services/LivraisonService.java</file>
+            <file>file:/C:/Users/hanna/OneDrive/Bureau/projet/PidevJava/src/gui/ListLivraisonsFXMLController.java</file>
+            <file>file:/C:/Users/hanna/OneDrive/Bureau/projet/PidevJava/src/pidevjava/PersonnesFXMain.java</file>
+            <file>file:/C:/Users/hanna/OneDrive/Bureau/projet/PidevJava/src/gui/ListLivreursFXMLController.java</file>
+            <file>file:/C:/Users/hanna/OneDrive/Bureau/projet/PidevJava/src/services/ILivraison.java</file>
+            <file>file:/C:/Users/hanna/OneDrive/Bureau/projet/PidevJava/src/gui/AjouterPFXMLController.java</file>
+            <file>file:/C:/Users/hanna/OneDrive/Bureau/projet/PidevJava/src/entities/Livreur.java</file>
+            <file>file:/C:/Users/hanna/OneDrive/Bureau/projet/PidevJava/src/gui/AcceuilFXMLController.java</file>
+            <file>file:/C:/Users/hanna/OneDrive/Bureau/projet/PidevJava/src/gui/ListLivreursController.java</file>
+            <file>file:/C:/Users/hanna/OneDrive/Bureau/projet/PidevJava/src/services/PersonneService.java</file>
+            <file>file:/C:/Users/hanna/OneDrive/Bureau/projet/PidevJava/src/services/LivreurService.java</file>
+            <file>file:/C:/Users/hanna/OneDrive/Bureau/projet/PidevJava/src/services/ILivreur.java</file>
+            <file>file:/C:/Users/hanna/OneDrive/Bureau/projet/PidevJava/src/gui/AjouterLivraisonFXMLController.java</file>
+            <file>file:/C:/Users/hanna/OneDrive/Bureau/projet/PidevJava/src/pidevjava/PidevJava.java</file>
+            <file>file:/C:/Users/hanna/OneDrive/Bureau/projet/PidevJava/src/utils/MyDB.java</file>
+            <file>file:/C:/Users/hanna/OneDrive/Bureau/projet/PidevJava/src/gui/ListLivraisonsController.java</file>
+            <file>file:/C:/Users/hanna/OneDrive/Bureau/projet/PidevJava/src/gui/AjouterLivreurFXMLController.java</file>
+        </group>
+    </open-files>
+</project-private>
