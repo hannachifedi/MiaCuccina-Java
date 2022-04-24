@@ -3,24 +3,31 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/hanna/OneDrive/Bureau/projet/PidevJava/src/entities/Livraison.java</file>
+            <file>file:/C:/Users/hanna/OneDrive/Bureau/projet/PidevJava/src/gui/front/FrontReservationFXMLController.java</file>
             <file>file:/C:/Users/hanna/OneDrive/Bureau/projet/PidevJava/src/services/LivraisonService.java</file>
-            <file>file:/C:/Users/hanna/OneDrive/Bureau/projet/PidevJava/src/gui/ListLivraisonsFXMLController.java</file>
-            <file>file:/C:/Users/hanna/OneDrive/Bureau/projet/PidevJava/src/pidevjava/PersonnesFXMain.java</file>
             <file>file:/C:/Users/hanna/OneDrive/Bureau/projet/PidevJava/src/gui/ListLivreursFXMLController.java</file>
             <file>file:/C:/Users/hanna/OneDrive/Bureau/projet/PidevJava/src/services/ILivraison.java</file>
+            <file>file:/C:/Users/hanna/OneDrive/Bureau/projet/PidevJava/src/gui/back/BackTableFXMLController.java</file>
             <file>file:/C:/Users/hanna/OneDrive/Bureau/projet/PidevJava/src/gui/AjouterPFXMLController.java</file>
-            <file>file:/C:/Users/hanna/OneDrive/Bureau/projet/PidevJava/src/entities/Livreur.java</file>
             <file>file:/C:/Users/hanna/OneDrive/Bureau/projet/PidevJava/src/gui/AcceuilFXMLController.java</file>
-            <file>file:/C:/Users/hanna/OneDrive/Bureau/projet/PidevJava/src/gui/ListLivreursController.java</file>
             <file>file:/C:/Users/hanna/OneDrive/Bureau/projet/PidevJava/src/services/PersonneService.java</file>
             <file>file:/C:/Users/hanna/OneDrive/Bureau/projet/PidevJava/src/services/LivreurService.java</file>
             <file>file:/C:/Users/hanna/OneDrive/Bureau/projet/PidevJava/src/services/ILivreur.java</file>
             <file>file:/C:/Users/hanna/OneDrive/Bureau/projet/PidevJava/src/gui/AjouterLivraisonFXMLController.java</file>
-            <file>file:/C:/Users/hanna/OneDrive/Bureau/projet/PidevJava/src/pidevjava/PidevJava.java</file>
-            <file>file:/C:/Users/hanna/OneDrive/Bureau/projet/PidevJava/src/utils/MyDB.java</file>
-            <file>file:/C:/Users/hanna/OneDrive/Bureau/projet/PidevJava/src/gui/ListLivraisonsController.java</file>
             <file>file:/C:/Users/hanna/OneDrive/Bureau/projet/PidevJava/src/gui/AjouterLivreurFXMLController.java</file>
+            <file>file:/C:/Users/hanna/OneDrive/Bureau/projet/PidevJava/src/entities/Livraison.java</file>
+            <file>file:/C:/Users/hanna/OneDrive/Bureau/projet/PidevJava/src/gui/back/BackLivraisonFXML.fxml</file>
+            <file>file:/C:/Users/hanna/OneDrive/Bureau/projet/PidevJava/src/gui/ListLivraisonsFXMLController.java</file>
+            <file>file:/C:/Users/hanna/OneDrive/Bureau/projet/PidevJava/src/pidevjava/PersonnesFXMain.java</file>
+            <file>file:/C:/Users/hanna/OneDrive/Bureau/projet/PidevJava/src/gui/back/BackAjoutLivraisonController.java</file>
+            <file>file:/C:/Users/hanna/OneDrive/Bureau/projet/PidevJava/src/gui/front/FrontLivraisonFXMLController.java</file>
+            <file>file:/C:/Users/hanna/OneDrive/Bureau/projet/PidevJava/src/entities/Livreur.java</file>
+            <file>file:/C:/Users/hanna/OneDrive/Bureau/projet/PidevJava/src/gui/back/BackLivraisonFXMLController.java</file>
+            <file>file:/C:/Users/hanna/OneDrive/Bureau/projet/PidevJava/src/gui/back/BackEmplacementFXMLController.java</file>
+            <file>file:/C:/Users/hanna/OneDrive/Bureau/projet/PidevJava/src/gui/front/MenuFXMLController.java</file>
+            <file>file:/C:/Users/hanna/OneDrive/Bureau/projet/PidevJava/src/gui/back/BackAjoutLivreurController.java</file>
+            <file>file:/C:/Users/hanna/OneDrive/Bureau/projet/PidevJava/src/utils/MyDB.java</file>
+            <file>file:/C:/Users/hanna/OneDrive/Bureau/projet/PidevJava/src/gui/back/BackLivreurFXMLController.java</file>
         </group>
     </open-files>
 </project-private>

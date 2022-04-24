@@ -35,8 +35,9 @@ public class PersonnesFXMain extends Application {
     
    @Override
     public void start(Stage primaryStage) throws IOException{
-   //   URL root_url = new File("src/gui/ListLivreursFXML.fxml").toURI().toURL();
-     URL root_url = new File("src/gui/ListLivraisonsFXML.fxml").toURI().toURL();
+     URL root_url = new File("src/gui/back/BackLivreurFXML.fxml").toURI().toURL();
+   //  URL root_url = new File("src/gui/back/BackLivraisonFXML.fxml").toURI().toURL();
+    // URL root_url = new File("src/gui/front/FrontLivraisonFXML.fxml").toURI().toURL();
       Parent parent = FXMLLoader.load(root_url);
         Scene scene = new Scene(parent);
         primaryStage.initStyle(StageStyle.TRANSPARENT);

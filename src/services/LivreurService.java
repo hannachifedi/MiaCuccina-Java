@@ -116,6 +116,73 @@ public class LivreurService implements ILivreur<Livreur>{
        
         pre.executeUpdate();
     }
+    
+    public ArrayList<Livreur> TrierParId() {
+
+        ArrayList<Livreur> List = new ArrayList<>();
+        try {
+
+            String req = "select * from livreur ORDER BY nom_liv ";
+          PreparedStatement pre = connexion.prepareStatement(req);
+
+            ResultSet rs = pre.executeQuery(req);
+
+            while (rs.next()) {
+                Livreur l = new Livreur();
+
+               
+                l.setId_livreur(rs.getInt("id_livreur"));
+                l.setNom_liv(rs.getString("nom_liv"));
+                l.setPrenom_liv(rs.getString("prenom_liv"));
+                l.setNum_tel_liv(rs.getString("num_tel_liv"));
+                l.setRegion(rs.getString("Region"));
+                l.setMat_liv(rs.getString("mat_liv"));
+                l.setDisponibilite_liv(rs.getString("disponibilite_liv"));
+
+               
+         
+
+                List.add(l);
+            }
+        } catch (SQLException ex) {
+            System.out.println(ex.getMessage());
+        }
+        return List;
+    }
+    
+    public List<Livreur> RechercherLivreur(String x) {
+        ArrayList<Livreur> List = new ArrayList<>();
+        try {
+            String req = "Select * from livreur where  nom_liv like '%" + x + "%'  ";
+            System.out.println("aa: "+x);
+       PreparedStatement pre = connexion.prepareStatement(req);
+
+            ResultSet rs = pre.executeQuery(req);
+                while (rs.next()) {
+                 Livreur l = new Livreur();
+
+               
+               
+                l.setId_livreur(rs.getInt("id_livreur"));
+                l.setNom_liv(rs.getString("nom_liv"));
+                l.setPrenom_liv(rs.getString("prenom_liv"));
+                l.setNum_tel_liv(rs.getString("num_tel_liv"));
+                l.setRegion(rs.getString("Region"));
+                l.setMat_liv(rs.getString("mat_liv"));
+                l.setDisponibilite_liv(rs.getString("disponibilite_liv"));
+                    List.add(l);
+                }
+
+           
+
+        } catch (SQLException ex) {
+            System.err.println(ex.getMessage());
+        }
+        if (List.isEmpty()) {
+            System.out.println("NOT FOUND");
+        }
+        return List;
+    }
 
     
     

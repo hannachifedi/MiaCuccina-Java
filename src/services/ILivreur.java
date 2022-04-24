@@ -7,6 +7,7 @@ package services;
 
 import entities.Livreur;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.List;
 import javafx.collections.ObservableList;
 
@@ -20,5 +21,7 @@ public interface ILivreur<L>  {
     public void deleteLivreur(int id_livreur) throws SQLException;
     public void modifierL(L l,int id_livreur) throws SQLException;
     public ObservableList<Livreur> getAll() throws SQLException;
+    public ArrayList<Livreur> TrierParId();
+    public List<Livreur> RechercherLivreur(String x);
     
 }

@@ -164,19 +164,17 @@ public class ListLivraisonsFXMLController implements Initializable {
     }
 
     @FXML
-    private void Modifierliv(ActionEvent event) {
+    private void Modifierliv(ActionEvent event) throws SQLException {
         LivraisonService sp = new LivraisonService();
         
         
         String description= tfdescription.getText();
-//        int etat =tfetat.getText();
+        int etat =(Integer.parseInt(tfetat.getText()));
         String adresse = tfadresse.getText();
         
         if (description.isEmpty()) { 
             JOptionPane.showMessageDialog(null, "la description  ne doit pas etre vide");
-//        }  else if (etat.isEmpty()) {
-//            JOptionPane.showMessageDialog(null, "l etat ne doit pas etre vide");
-    }
+        }
           else if (adresse.isEmpty()) {
             JOptionPane.showMessageDialog(null, "l adresse  ne doit pas etre vide");
     } 
