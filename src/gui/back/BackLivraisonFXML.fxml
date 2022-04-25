@@ -251,6 +251,8 @@
             <TextField fx:id="tfetat" layoutX="898.0" layoutY="384.0" promptText="Etat" />
             <TextField fx:id="tfadresse" layoutX="898.0" layoutY="460.0" promptText="Adresse" />
             <Button layoutX="846.0" layoutY="565.0" mnemonicParsing="false" onAction="#Modifierliv" prefHeight="50.0" prefWidth="105.0" style="-fx-background-color: #39B8E3;" styleClass="search-button" stylesheets="@../../Values/style.css" text="Modifier" />
+            <Button layoutX="780.0" layoutY="179.0" mnemonicParsing="false" onMouseClicked="#envoyer_sms" prefHeight="39.0" prefWidth="71.0" style="-fx-background-color: #39B8E3;" styleClass="add-btn" stylesheets="@../../Values/style.css" text="SMS" />
+            <TextField fx:id="text_sms" layoutX="867.0" layoutY="186.0" />
          </children>
       </AnchorPane>
       <Button layoutX="266.0" layoutY="183.0" mnemonicParsing="false" onMouseClicked="#btnAjouter" prefHeight="32.0" prefWidth="121.0" style="-fx-background-color: #39B8E3;" stylesheets="@../../Values/style.css" text="AJOUTER">

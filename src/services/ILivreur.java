@@ -22,6 +22,8 @@ public interface ILivreur<L>  {
     public void modifierL(L l,int id_livreur) throws SQLException;
     public ObservableList<Livreur> getAll() throws SQLException;
     public ArrayList<Livreur> TrierParId();
-    public List<Livreur> RechercherLivreur(String x);
+    public List<Livreur> RechercherLivreurNom(String x);
+    public List<Livreur>RechercherLivreurPrenom(String x);
+    public List<Livreur>RechercherLivreurNumero(String x);
     
 }

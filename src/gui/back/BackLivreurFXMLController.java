@@ -241,7 +241,21 @@ public class BackLivreurFXMLController implements Initializable {
             //int a = Integer.parseInt(s);
          sp.modifierL(l,2);
          sp.modifierL(l,3);
- 
+         sp.modifierL(l,4);
+         sp.modifierL(l,5);
+         sp.modifierL(l,6);
+         sp.modifierL(l,7);
+         sp.modifierL(l,8);
+         sp.modifierL(l,9);
+         sp.modifierL(l,10);
+         sp.modifierL(l,11);
+         sp.modifierL(l,12);
+         sp.modifierL(l,13);
+         sp.modifierL(l,14);
+         sp.modifierL(l,15);
+         sp.modifierL(l,16);
+         sp.modifierL(l,17);
+          NotificationH.NotifcationOnAction("Envoie de modification ", "Livreur modifiée");
             JOptionPane.showMessageDialog(null, "livreur modifiée !");
     }
     }
@@ -261,10 +275,41 @@ public class BackLivreurFXMLController implements Initializable {
        tableViewlivreur.setItems(list);
     }
 
+
     @FXML
-    private void search(MouseEvent event) {
+    private void searchNom(MouseEvent event) {
+               LivreurService ls = new LivreurService();
+       ObservableList<Livreur> list = FXCollections.observableArrayList(ls.RechercherLivreurNom(tfsearch.getText()));
+
+            id_livreur.setCellValueFactory(new PropertyValueFactory<>("id_livreur"));
+            Nom.setCellValueFactory(new PropertyValueFactory<>("nom_liv"));
+            Prenom.setCellValueFactory(new PropertyValueFactory<>("prenom_liv"));
+            numtel.setCellValueFactory(new PropertyValueFactory<>("num_tel_liv"));
+            Region.setCellValueFactory(new PropertyValueFactory<>("Region"));
+            Matricule.setCellValueFactory(new PropertyValueFactory<>("mat_liv"));
+            Dispo.setCellValueFactory(new PropertyValueFactory<>("disponibilite_liv"));
+       tableViewlivreur.setItems(list);
+    }
+
+    @FXML
+    private void searchPrenom(MouseEvent event) {
        LivreurService ls = new LivreurService();
-       ObservableList<Livreur> list = FXCollections.observableArrayList(ls.RechercherLivreur(tfsearch.getText()));
+       ObservableList<Livreur> list = FXCollections.observableArrayList(ls.RechercherLivreurPrenom(tfsearch.getText()));
+
+            id_livreur.setCellValueFactory(new PropertyValueFactory<>("id_livreur"));
+            Nom.setCellValueFactory(new PropertyValueFactory<>("nom_liv"));
+            Prenom.setCellValueFactory(new PropertyValueFactory<>("prenom_liv"));
+            numtel.setCellValueFactory(new PropertyValueFactory<>("num_tel_liv"));
+            Region.setCellValueFactory(new PropertyValueFactory<>("Region"));
+            Matricule.setCellValueFactory(new PropertyValueFactory<>("mat_liv"));
+            Dispo.setCellValueFactory(new PropertyValueFactory<>("disponibilite_liv"));
+       tableViewlivreur.setItems(list);
+    }
+
+    @FXML
+    private void searchNumero(MouseEvent event) {
+       LivreurService ls = new LivreurService();
+       ObservableList<Livreur> list = FXCollections.observableArrayList(ls.RechercherLivreurNumero(tfsearch.getText()));
 
             id_livreur.setCellValueFactory(new PropertyValueFactory<>("id_livreur"));
             Nom.setCellValueFactory(new PropertyValueFactory<>("nom_liv"));

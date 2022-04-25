@@ -17,7 +17,7 @@
 
 <AnchorPane id="AnchorPane" prefHeight="955.0" prefWidth="1368.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.back.BackLivreurFXMLController">
    <children>
-      <AnchorPane id="AnchorPane" layoutY="7.0" prefHeight="942.0" prefWidth="1332.0">
+      <AnchorPane id="AnchorPane" layoutX="-19.0" prefHeight="942.0" prefWidth="1332.0">
          <children>
             <VBox layoutY="-4.0" prefHeight="946.0" prefWidth="235.0" style="-fx-background-color: #39B8E3;">
                <children>
@@ -214,7 +214,7 @@
                   </Text>
                </children></Pane>
             <Button layoutX="1280.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#close" styleClass="add-btn" stylesheets="@../../Values/style.css" text="X" />
-            <TableView fx:id="tableViewlivreur" layoutX="256.0" layoutY="221.0" prefHeight="500.0" prefWidth="764.0" stylesheets="@../../Values/style.css">
+            <TableView fx:id="tableViewlivreur" layoutX="245.0" layoutY="221.0" prefHeight="500.0" prefWidth="764.0" stylesheets="@../../Values/style.css">
                <columns>
                   <TableColumn fx:id="Nom" maxWidth="200.0" prefWidth="104.0" style="-fx-alignment: center;" text="Nom" />
                   <TableColumn fx:id="Prenom" maxWidth="300.0" prefWidth="109.0" style="-fx-alignment: center;" text="Prenom" />
@@ -288,13 +288,15 @@
             </Button>
             <Button fx:id="removeBtn" layoutX="441.0" layoutY="164.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="121.0" style="-fx-background-color: #39B8E3;" styleClass="search-button" stylesheets="@../../Values/style.css" text="Remove" />
             <Button layoutX="598.0" layoutY="168.0" mnemonicParsing="false" onMouseClicked="#trierLivreur" prefHeight="39.0" prefWidth="105.0" style="-fx-background-color: #39B8E3;" styleClass="search-button" stylesheets="@../../Values/style.css" text="Tri" />
-            <TextField fx:id="tfsearch" layoutX="1114.0" layoutY="191.0" />
-            <Button layoutX="1144.0" layoutY="232.0" mnemonicParsing="false" onMouseClicked="#search" prefHeight="43.0" prefWidth="90.0" style="-fx-background-color: #39B8E3;" stylesheets="@../../Values/style.css" text="Search">
+            <TextField fx:id="tfsearch" layoutX="1080.0" layoutY="191.0" prefHeight="25.0" prefWidth="183.0" />
+            <Button layoutX="1026.0" layoutY="236.0" mnemonicParsing="false" onMouseClicked="#searchNom" prefHeight="43.0" prefWidth="90.0" style="-fx-background-color: #39B8E3;" stylesheets="@../../Values/style.css" text="Par Nom">
                <styleClass>
                   <String fx:value="add-btn" />
                   <String fx:value="search-button" />
                </styleClass>
             </Button>
+            <Button layoutX="1124.0" layoutY="238.0" mnemonicParsing="false" onMouseClicked="#searchPrenom" prefHeight="39.0" prefWidth="84.0" style="-fx-background-color: #39B8E3;" styleClass="add-btn" stylesheets="@../../Values/style.css" text="Par Prenom" />
+            <Button layoutX="1212.0" layoutY="238.0" mnemonicParsing="false" onMouseClicked="#searchNumero" prefHeight="39.0" prefWidth="102.0" style="-fx-background-color: #39B8E3;" styleClass="add-btn" stylesheets="@../../Values/style.css" text="Par num" />
          </children>
       </AnchorPane>
    </children>

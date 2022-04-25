@@ -109,6 +109,7 @@ public class BackAjoutLivraisonController implements Initializable {
             ls.ajouterLivrai(liv);
             Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
             alert.setTitle("Succes");
+        NotificationH.NotifcationOnAction("Envoie d ajout ", "Livraison ajoutée");
             alert.setContentText("Livraison  ajoutée");
             alert.show();
             tfdescription.setText(""); 

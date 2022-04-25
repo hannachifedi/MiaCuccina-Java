@@ -6,6 +6,7 @@
 package services;
 
 import entities.Livreur;
+import java.awt.Image;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -15,6 +16,9 @@ import java.util.ArrayList;
 import java.util.List;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.scene.image.ImageView;
+import javafx.util.Duration;
+import org.controlsfx.control.Notifications;
 
 import utils.MyDB;
 
@@ -150,7 +154,7 @@ public class LivreurService implements ILivreur<Livreur>{
         return List;
     }
     
-    public List<Livreur> RechercherLivreur(String x) {
+    public List<Livreur> RechercherLivreurNom(String x) {
         ArrayList<Livreur> List = new ArrayList<>();
         try {
             String req = "Select * from livreur where  nom_liv like '%" + x + "%'  ";
@@ -183,6 +187,77 @@ public class LivreurService implements ILivreur<Livreur>{
         }
         return List;
     }
+    
+    public List<Livreur> RechercherLivreurPrenom(String x) {
+        ArrayList<Livreur> List = new ArrayList<>();
+        try {
+            String req = "Select * from livreur where  prenom_liv like '%" + x + "%'  ";
+            System.out.println("aa: "+x);
+       PreparedStatement pre = connexion.prepareStatement(req);
+
+            ResultSet rs = pre.executeQuery(req);
+                while (rs.next()) {
+                 Livreur l = new Livreur();
+
+               
+               
+                l.setId_livreur(rs.getInt("id_livreur"));
+                l.setNom_liv(rs.getString("nom_liv"));
+                l.setPrenom_liv(rs.getString("prenom_liv"));
+                l.setNum_tel_liv(rs.getString("num_tel_liv"));
+                l.setRegion(rs.getString("Region"));
+                l.setMat_liv(rs.getString("mat_liv"));
+                l.setDisponibilite_liv(rs.getString("disponibilite_liv"));
+                    List.add(l);
+                }
+
+           
+
+        } catch (SQLException ex) {
+            System.err.println(ex.getMessage());
+        }
+        if (List.isEmpty()) {
+            System.out.println("NOT FOUND");
+        }
+        return List;
+    }
+    
+    public List<Livreur> RechercherLivreurNumero(String x) {
+        ArrayList<Livreur> List = new ArrayList<>();
+        try {
+            String req = "Select * from livreur where  num_tel_liv like '%" + x + "%'  ";
+            System.out.println("aa: "+x);
+       PreparedStatement pre = connexion.prepareStatement(req);
+
+            ResultSet rs = pre.executeQuery(req);
+                while (rs.next()) {
+                 Livreur l = new Livreur();
+
+               
+               
+                l.setId_livreur(rs.getInt("id_livreur"));
+                l.setNom_liv(rs.getString("nom_liv"));
+                l.setPrenom_liv(rs.getString("prenom_liv"));
+                l.setNum_tel_liv(rs.getString("num_tel_liv"));
+                l.setRegion(rs.getString("Region"));
+                l.setMat_liv(rs.getString("mat_liv"));
+                l.setDisponibilite_liv(rs.getString("disponibilite_liv"));
+                    List.add(l);
+                }
+
+           
+
+        } catch (SQLException ex) {
+            System.err.println(ex.getMessage());
+        }
+        if (List.isEmpty()) {
+            System.out.println("NOT FOUND");
+        }
+        return List;
+    }
+    
+
+
 
     
     

@@ -5,6 +5,9 @@
  */
 package gui.back;
 
+import com.twilio.Twilio;
+import com.twilio.rest.api.v2010.account.Message;
+import com.twilio.type.PhoneNumber;
 import entities.Livraison;
 import java.io.IOException;
 import java.net.URL;
@@ -63,6 +66,8 @@ public class BackLivraisonFXMLController implements Initializable {
     private TextField tfetat;
     @FXML
     private TextField tfadresse;
+    @FXML
+    private TextField text_sms;
 
     /**
      * Initializes the controller class.
@@ -213,9 +218,25 @@ public class BackLivraisonFXMLController implements Initializable {
             //String s = "select id_produit from produit where nom='"+tfnom.getText()+"'";
             //int a = Integer.parseInt(s);
          sp.modifierLiv(liv,1);
- 
+            NotificationH.NotifcationOnAction("Envoie de Modification ", "Livraison modifié");
             JOptionPane.showMessageDialog(null, "livraison modifiée !");
     }
+    }
+
+    @FXML
+    private void envoyer_sms(MouseEvent event) {
+             String messagetoSend = text_sms.getText();
+          String accountSid = "ACbecbe975d61924c88c96089455c6c269"; // Your Account SID from www.twilio.com/user/account
+    String authToken = "2c4e2d5730650c69af71a91fd142094d"; // Your Auth Token from www.twilio.com/user/account
+
+    Twilio.init(accountSid, authToken);
+    Message message = Message.creator(
+    new PhoneNumber("+21625459399"),  // To number
+    new PhoneNumber("+12395108635"),  // From number
+    messagetoSend                   // SMS body
+    ).create();
+
+    System.out.println(message.getSid());
     }
     
 }
